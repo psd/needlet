@@ -3,7 +3,7 @@
 <body>
 <h1>Needlet</h1>
 <p>Take me to the need on Maslow for a page on GOV.UK:
-<p>Drag the <a href='javascript:'>needlet</a> bookmarklet to your bookmarks bar</p>
+<p>Drag the <a href='javascript:(function(){$.getJSON(document.location+".json",function(data){if(data.details.need_id){window.location="https://maslow.production.alphagov.co.uk/needs/"+data.details.need_id}})})();'>needlet</a> bookmarklet to your bookmarks bar</p>
 <p><a id="github" href="https://github.com/psd/needlet">Fork me on github</a>!</p>
 <p>Made by <a href="http://whatfettle.com">psd</a> and <a href="https://github.com/bishboria">bishboria</a> for <a href="http://www.gov.uk">GOV.UK</a>.</p>
 </body>
