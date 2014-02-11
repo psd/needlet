@@ -2,7 +2,7 @@
 
     $.getJSON(document.location + ".json")
         .done(function (data) {
-            if (data.details.need_id && parseInt(data.details.need_id) > 100000) {
+            if (data.details && data.details.need_id && parseInt(data.details.need_id) > 100000) {
                 window.location = "https://maslow.production.alphagov.co.uk/needs/" + data.details.need_id;
             }
             else {
